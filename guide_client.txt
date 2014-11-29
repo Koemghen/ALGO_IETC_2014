@@ -1,0 +1,36 @@
+Quick use guide - GitHub client
+=================================
+
+N.B. : Il est nécessaire d'avoir installé le client github.
+Version windows : https://windows.github.com/
+Version Mac : https://mac.github.com/
+
+- Une fois le client démarré, utiliser l'option d'ajout de repository en haut à gauche de la fenêtre principale.
+
+- Deux options se présentent en haut de la fenêtre d'ajout, utiliser "Clone" et entrer l'adresse du projet :
+		https://github.com/Koemghen/ALGO_IETC_2014.git
+  Il est possible que le projet soit visible dans la liste si vous êtes déjà ajouté au groupe.
+ 
+- Valider le clonage du repository dans le bas de la fenêtre d'ajout et sélectionner un répertoire qui servira à 
+  sauvegarder les fichiers en local.
+  
+- Ouvrir l'invite de commande. Pour ce faire, sélectionner l'option "Open in Git Shell" dans la liste déroulante
+  du menu accessible en haut à droite de la fenêtre principale (bouton engrenage).
+  
+- Synchroniser les fichiers déjà présents sur le web en entrant la commande : git pull
+
+Les différents fichiers peuvent maintenant être édités en local.
+
+Une fois édités, il est possible d'à nouveau les synchroniser sur le web. Il est nécessaire que les fichiers
+aient gardé le même nom et se trouvent dans le répertoire choisi précédemment lors de l'ajout du repository.
+
+Si ces conditions sont réunies, entrer et valider successivement les commandes suivantes, toujours dans la fenêtre 
+"git shell" ouverte précédemment : (le fichier brol.txt est utilisé à titre d'exemple et doit être remplacé par 
+le nom du fichier à synchroniser)
+
+git add brol.txt
+git commit -m "Votre message de mise à jour - il est obligatoire!"
+git push
+
+Si la synchronisation tombe en erreur, la majorité du temps, c'est qu'il existe une différence entre le contenu web
+et le contenu local. Dans ce cas, synchroniser à l'aide de la commande "git pull" et réessayer "git push".
