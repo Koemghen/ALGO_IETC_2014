@@ -50,3 +50,21 @@ int verifprenom (char* chaine)
         i++;
     }
 }
+
+int compatibildatenaissregnat(char *datenaiss, char *num_reg_nat)
+{
+    if(num_reg_nat[0]==datenaiss[8])
+     if(num_reg_nat[1]==datenaiss[9])
+      if(num_reg_nat[2]==datenaiss[3])
+       if(num_reg_nat[3]==datenaiss[4])
+        if(num_reg_nat[4]==datenaiss[0])
+         if(num_reg_nat[5]==datenaiss[1]) 
+            return 1;
+         else return 0;
+        else return 0;
+       else return 0;
+      else return 0;
+     else return 0;
+    else return 0;
+}
+         
