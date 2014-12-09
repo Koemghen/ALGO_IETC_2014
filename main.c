@@ -13,8 +13,7 @@ int verifnom (char* chaine)
     {
         if (chaine[0] == 32)
         {
-             printf("Erreur! Votre nom ne peut commencer par un espace! Veuillez r%cintroduire votre nom: ",130);
-             gets (chaine);         
+             return 0;      
         }
         
         else if (chaine[i]>=65 && chaine[i]<=90 || chaine[i]==32)
@@ -36,8 +35,7 @@ int verifprenom (char* chaine)
     { 
         if(chaine[0]==32||chaine[0]==45)
         {
-              printf("Erreur! Votre pr%cnom ne peut commencer par un espace ni par un tiret! R%cintroduisez votre nom:\n",130,130);
-              gets(chaine);
+              return 0;
         }           
         else if((chaine[i]>=65 && chaine[i]<=90) || chaine[i]==32 || chaine[i]==45)
         {
